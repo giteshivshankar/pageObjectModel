@@ -34,6 +34,7 @@ public class AmazonBrowseProductsTest {
 			
 			AmazonHomepage amazonHomeObj = new AmazonHomepage(driver);
 			amazonHomeObj.waitForAmazonHome(driver);
+			//Main
 			/*amazonHomeObj.selectCategory(CATEGORY);
 			amazonHomeObj.searchQuery(QUERY);
 			amazonHomeObj.setPriceRange(LOWER, HIGHER);
