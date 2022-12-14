@@ -34,11 +34,11 @@ public class AmazonBrowseProductsTest {
 			
 			AmazonHomepage amazonHomeObj = new AmazonHomepage(driver);
 			amazonHomeObj.waitForAmazonHome(driver);
-			amazonHomeObj.selectCategory(CATEGORY);
+			/*amazonHomeObj.selectCategory(CATEGORY);
 			amazonHomeObj.searchQuery(QUERY);
 			amazonHomeObj.setPriceRange(LOWER, HIGHER);
 			amazonHomeObj.checkPricesWithRange(Integer.valueOf(LOWER), Integer.valueOf(HIGHER));
-			
+			*/
 			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
