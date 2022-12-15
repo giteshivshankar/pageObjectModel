@@ -11,7 +11,7 @@ public class DriverManagement {
 	@SuppressWarnings("deprecation")
 	public WebDriver getDriver(String browser, String url) {
 		if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\Softwares\\workspace2\\com.interview\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
