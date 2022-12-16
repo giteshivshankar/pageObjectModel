@@ -25,7 +25,7 @@ public class AmazonBrowseProductsTest {
 		try {
 			TestDataHandling data = new TestDataHandling();
 			DriverManagement driverHandle = new DriverManagement();
-			driver=driverHandle.getDriver(BROWSER, data.getProperty(URL));
+			driver=driverHandle.getDriver(data.getProperty(URL));
 			Thread.sleep(3000);
 			GoogleSearchPage googleSearchObj = new GoogleSearchPage(driver);
 			googleSearchObj.searchWithText(SITE);

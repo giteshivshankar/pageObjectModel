@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverManagement {
 	WebDriver driver;
-	
+	String browser = System.getProperty("browser");
 	@SuppressWarnings("deprecation")
-	public WebDriver getDriver(String browser, String url) {
+	public WebDriver getDriver(String url) {
 		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
